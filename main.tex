@@ -1,0 +1,260 @@
+% !TEX encoding = UTF-8
+% !TEX program = pdflatex
+% !TEX spellcheck = en_GB
+
+\documentclass[english,a4paper]{europasscv}
+
+%+++ Packages
+\usepackage[english]{babel}
+\usepackage[
+    backend=biber,
+    autolang=hyphen,
+    sorting=none,
+    style=numeric,
+    maxbibnames=99,
+    doi=true,
+    isbn=false,
+    maxcitenames=2]{biblatex}
+\usepackage{csquotes}
+\usepackage{my-europasscv-bibliography}
+%---
+
+%+++ Personal information
+\addbibresource{my_papers.bib}
+\addbibresource{my_posters.bib}
+\ecvbibhighlight{Mingari}{Leonardo}{L.}
+
+\ecvname{Leonardo Mingari}
+\ecvaddress{Carrer de Lluís Solé i Sabarís, s/n, 08028 Barcelona, Spain}
+\ecvmobile{(+34) 658 41 51 61}
+\ecvemail{lmingari@geo3bcn.csic.es}
+\ecvhomepage{https://rb.gy/bvmab5}
+\ecvgithubpage{www.github.com/lmingari}
+\ecvgitlabpage{www.gitlab.com/lmingari}
+\ecvorcid[label, link]{0000-0002-6584-4699}
+
+\date{\today}
+%---
+
+\begin{document}
+  \begin{europasscv}
+
+  \ecvpersonalinfo
+%  \ecvbigitem{Summary}{Researcher with a strong background in Physics and Atmospheric Sciences, communication skills, extensive teaching experience and ability to work independently and in a team environment}
+
+  %+++1 Work experience
+  \ecvsection{Work experience}
+  
+  \ecvtitle{January 2023 -- Present}{Post-Doctoral Researcher}
+  \ecvitem{Geosciencies Barcelona}{Barcelona, Spain}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item ChEESE project, phase 2: Centre of Excellence (CoE) for Exascale in Solid Earth 
+      \item DT-GEO project: A Digital Twin for GEOphysical extremes
+      \item Volcanic ash/gases transport and dispersion models
+      \item Active developer of the FALL3D code
+      \item Ensemble forecasting for volcanic ash dispersal and deposition 
+      \item Ensemble-based data assimilation 
+%      \item Implementation of a mass-consistent meteorological downscaling
+      \item Development of a digital twin component for volcanic dispersal and tephra fallout
+  \end{ecvitemize}
+  }
+   
+  \ecvtitle{February 2019 -- December 2022}{Post-Doctoral Researcher}
+  \ecvitem{Barcelona Supercomputing Center}{Barcelona, Spain}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item ChEESE project: Centre of Excellence (CoE) for Exascale in Solid Earth
+      \item Developer of the computational model for atmospheric transport and deposition of particles, aerosols and radionuclides FALL3D
+      \item Pilot demonstrator: High-resolution volcanic ash dispersal forecast
+      \item Implementation of an ensemble-based data assimilation system based on FALL3D+PDAF
+      \item Implementation of a volcanic ash resuspension module
+  \end{ecvitemize}
+  }
+  
+  \ecvtitle{April 2012 -- December 2018}{Research fellow}
+  \ecvitem{National Weather Service}{Buenos Aires, Argentina}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item SAVER-Net Project: South American Environmental Risk Management Network
+      \item PIDDEF 41/10 Project: Application of modern Numerical Models for weather forecasting  at the National Meteorological Service, Argentina. Studies of environmental vulnerability and socio-economic impact 
+      \item Implementation of a system for providing near real-time products of Lidar data at the National Weather Service
+      \item Development of algorithms for the inversion of lidar signals
+      \item Experience with Numerical Weather Prediction (NWP) models (WRF-ARW)
+  \end{ecvitemize}
+  }
+
+  \ecvtitle{April 2009 -- December 2016}{Teaching Assistant}
+  \ecvitem{University of Buenos Aires}{Buenos Aires, Argentina}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Undergraduate courses of Maths (2009--2016) and Physics (2015)
+      \item Ciclo Básico Común (CBC), first university year
+  \end{ecvitemize}
+  }
+
+  \pagebreak
+  
+  %+++1 Education and training
+  \ecvsection{Education and training}
+  
+  \ecvtitle{2013--2018}{PhD in Earth \& Environmental Sciences}
+  \ecvitem{}{Department of Physics, University of Buenos Aires, Argentina}
+  \ecvitem{}{
+      \begin{ecvitemize}
+        \item Dissertation: Modeling volcanic ash fallout resuspension for operational forecast purposes
+        \item In collaboration with the National Weather Service (Argentina)
+	\item Distinction: Outstanding thesis
+      \end{ecvitemize}
+  }  
+  \ecvtitle{2012}{University Degree in Physics}
+  \ecvitem{}{Department of Physics, University of Buenos Aires, Argentina}
+  \ecvitem{}{
+      \begin{ecvitemize}
+        \item Thesis title: Epidemics in adaptive networks
+	\item Average university grade: 9.04/10.0
+      \end{ecvitemize}
+  }
+  
+  %+++1 Personal skills
+  \ecvsection{Personal skills}
+  \ecvmothertongue{Spanish}
+  \ecvlanguageheader
+  \ecvlastlanguage{English}{B2}{B2}{B2}{B2}{B2}
+  \ecvlanguagefooter
+   
+  \ecvblueitem{Computer skills}{}
+  \ecvitem{Programming languages}{
+  \begin{ecvitemize}
+      \item Fortran 95-2003
+      \item MPI \& OpenMP
+      \item Python (NumPy, SciPy, Matplotlib, Cartopy\dots)
+      \item Java
+      \item C/C++
+      \item Haskell
+      \item \LaTeXe
+      \item HTML/CSS
+  \end{ecvitemize}
+  }
+  \ecvitem{Scientific tools}{
+  \begin{ecvitemize}
+      \item NCAR Command Language (NCL)
+      \item QGIS
+      \item Inkscape
+      \item Matlab, GNU Octave 
+      \item Mathematica, Reduce
+      \item LabView
+      \item Processing tools for scientific data formats (GRIB, NetCDF, HDF5, Shapefile)
+  \end{ecvitemize}
+  }
+
+  \ecvitem{Unix/Linux environment}{
+  \begin{ecvitemize}
+      \item Arch linux, Ubuntu
+      \item Unix Shell Scripting (sh, bash, zsh)
+      \item Experience with HPC clusters
+      \item Cluster management and job scheduling system
+      \item Git
+      \item Vim 
+  \end{ecvitemize}
+  }
+
+  %+++1 Publications
+  \ecvsection{Publications}
+  
+  \begin{refsection}[my_papers.bib]
+    \nocite{*}
+    %\renewcommand{\section}[2]{\ecvsection{#2}}
+    \renewcommand{\section}[2]{\ecvblueitem{#2}{}}
+    \printbibtabular[title=Peer-reviewed articles]
+  \end{refsection}
+
+  \begin{refsection}[my_posters.bib]
+    \nocite{*}
+    %\renewcommand{\section}[2]{\ecvsection{#2}}
+    \renewcommand{\section}[2]{\ecvblueitem{#2}{}}
+    \printbibtabular[title=Conference presentations]
+  \end{refsection}
+
+  %+++1 Awards
+  \ecvsection{Awards \& Fellowships}
+
+  \ecvtitle{April 2013--April 2018}{Doctoral fellowship}
+  \ecvitem{Buenos Aires, Argentina}{CONICET fellowship program for doctoral studies}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Institute: Department of Physics, University of Buenos Aires
+      \item Duration: 5 years
+      \item Funding Institution: CONICET (Argentina)
+  \end{ecvitemize}
+  }
+
+  \ecvtitle{February 2016--September 2016}{Scholarship for Study Abroad in Science and Technology}
+  \ecvitem{Barcelona, Spain}{BEC.AR Programme: Research Stays for PhD candidates}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Institute: Barcelona Supercomputing Center
+      \item Duration: 8 months
+      \item Funding Institution: Jefatura de Gabinete de Ministros de la Nación (Argentina)
+  \end{ecvitemize}
+  }
+
+  \ecvtitle{April 2012--April 2013}{Undergraduate research fellowship}
+  \ecvitem{Buenos Aires, Argentina}{PIDDEF 41/10 project}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Institute: National Meteorological Service
+      \item Duration: 1 year
+      \item Funding Institution: Argentine Ministry of Defence
+  \end{ecvitemize}
+  }
+
+  \pagebreak
+
+  %+++1 Teaching experience
+  \ecvsection{Teaching Experience}
+
+  \ecvblueitem{Postgraduate courses}{}
+  \ecvitem{2024}{Training course: Computational volcanology}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Lecturer
+      \item Institute: Barcelona Supercomputing Center, Barcelona, Spain
+  \end{ecvitemize}
+  }
+  \ecvitem{2019}{PATC course: HPC and natural hazards}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Lecturer
+      \item Institute: Barcelona Supercomputing Center, Barcelona, Spain
+  \end{ecvitemize}
+  }
+  \ecvitem{2017}{Master course: Remote Sensing and Modelling of Volcanic Eruptions}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Visiting Lecturer
+      \item Institute: Instituto Mario Gulich, Córdoba, Argentina
+  \end{ecvitemize}
+  }
+
+  \ecvblueitem{University courses}{}
+  \ecvitem{2009--2016}{Math undergraduate course}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Teaching Assistant
+      \item Institute: University of Buenos Aires, Argentina
+  \end{ecvitemize}
+  }
+  \ecvitem{2015}{Physics undergraduate course}
+  \ecvitem{}{
+  \begin{ecvitemize}
+      \item Teaching Assistant
+      \item Institute: University of Buenos Aires, Argentina
+  \end{ecvitemize}
+  }
+  %---
+
+  \end{europasscv}
+\end{document}
+
+% vim: spell spelllang=en_gb:foldmethod=marker:foldmarker=+++,---
